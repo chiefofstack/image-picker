@@ -1,0 +1,13 @@
+// Example mixin 
+@mixin triangle($color: null, $size: 90px) {
+    width: 0;
+    height: 0;
+    content: '';
+    z-index: 1;
+    border-style: solid;
+    border-width: 35px $size 0;
+    z-index:4;
+    @if($color != null){
+        border-color: $color transparent transparent;
+    }
+}
