@@ -1,0 +1,41 @@
+.grid{
+    display:grid;
+    grid-template-columns: 100% 0;
+    grid-template-rows: 100vh;
+    transition: 0.5s;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 576px){
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px){
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (min-width: 1260px){
+    .container {
+        max-width: 1260px;
+    }
+}
+
+
