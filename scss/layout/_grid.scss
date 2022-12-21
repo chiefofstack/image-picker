@@ -1,12 +1,3 @@
-.grid{
-    display:grid;
-    grid-template-columns: 100% 0;
-    grid-template-rows: 100vh;
-    transition: 0.5s;
-    overflow-y:scroll;
-    overflow-x:hidden;
-}
-
 .container {
     margin-right: auto;
     margin-left: auto;
