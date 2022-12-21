@@ -1,0 +1,28 @@
+.card{
+    padding: 30px;
+}
+
+.card ol{
+    font-size: 0.75rem;
+}
+
+.picture{
+    border: 1px solid $primary-color;
+    margin-bottom:5px;
+
+    &.primary{
+        border-radius: 3px 3px 0 0;
+        margin-bottom:0;
+    }
+}
+
+.btn-refresh{
+    border-radius: 0 0 3px 3px;
+    margin-bottom: 25px;
+
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+
