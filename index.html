@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Image Picker Using Javascript Array by Mark Jason Acab</title>
+        <title>Image Picker Using Javascript Arrays -  by Mark Jason Acab</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1">   
         <meta charset="utf-8">     
@@ -11,16 +11,101 @@
     </head>
     <body class="grid">
         <!-- Header -->      
-        <header>
+        <header class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>JS Image Picker</h1>
+                    <p>This is a simple demo of Javascript Arrays in conjuction with input validation and third party API integration.</p>
+                </div>
+            </div>
         </header>
-        
-        <aside>
-        </aside>  
+        <main class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <div class="card about">
+                        <h6>Instructions:</h6>
+                        <ol>
+                            <li>Enter an email address</li>
+                            <li>Click refresh to load a new image</li>
+                            <li>Click save to store the image</li>
+                            <li>The list below will be updated automatically</li>             
+                        </ol>
+                        
+                        <h6>Image list:</h6>
+                        <table class="table" style="display: block;">
+                            <thead>
+                                <tr>
+                                    <td colspan="50">Email</td>
+                                    <td colspan="50">Saved Pictures</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="50">name1@email.com</td>
+                                    <td colspan="50">
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="50">name1@email.com</td>
+                                    <td colspan="50">
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="50">name1@email.com</td>
+                                    <td colspan="50">
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                        <img src="https://picsum.photos/80/80" class="picture" alt="alt text" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-        <main> 
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card">     
+                        <label for="email" class="required">Email:</label>
+                        <input type="email" id="email" name="email" class="input-field">   
+
+                        <label for="email" class="required mt-3">Picture: </label>
+                        <img src="https://picsum.photos/600/350" class="picture primary" alt="alt text" />
+                        <a href="#" class="btn btn-sm btn-refresh btn-prim">Refresh <i class="fa fa-refresh"></i></a>
+
+                        <hr>
+                        
+                        <a href="#" class="btn btn-sec">
+                            Save
+                        </a>
+                        
+                    </div>  
+                </div>
+            </div>            
         </main>
 
-        <footer>            
+        <footer class="container footer mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <hr>
+                    <p>More of my recent works can be found in <a href="https://mark-acab.netmatters-scs.co.uk/" target="_blank">my portfolio</a> 
+                    and please checkout <a href="https://chiefofstack.com">my blog</a> for more previous projects that I worked on. </p>
+                </div>
+            </div>
         </footer>
 
         <script src="https://kit.fontawesome.com/efff71aefd.js" crossorigin="anonymous"></script>
