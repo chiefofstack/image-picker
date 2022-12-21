@@ -22,12 +22,7 @@ header {
     background-color: #fff;
 }
 
-.site-logo{
-    display:block;
-    width: 100%;
-    height: 72px;
-    background:url("../images/logo.png") no-repeat center / contain;
-}
+
 
 .srt {
     position: absolute;
@@ -66,15 +61,6 @@ header {
     }
 }
 
-.btn-prim-inv{ //primary inverted
-    background-color: $white;
-    color: $primary-color;    
-    &:hover{
-        background-color:$white;
-        color: $primary-color;
-    }
-}
-
 .btn-sec{ //secondary
     background-color: #4183d7;
     color: $white;
@@ -92,7 +78,6 @@ header {
     }
 }
 
-
 .btn-disabled{ 
     background-color: $white;
     color: #aaa;
@@ -103,7 +88,6 @@ header {
         color: #aaa;
     }
 }
-
 
 .input-field{
     height: 47px;
