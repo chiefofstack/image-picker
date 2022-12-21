@@ -1,49 +1,9 @@
-@use "sass:map";
-
-$buttonColors: (
-  ".fa-facebook": $facebook-color,
-  ".fa-twitter": $twitter-color,
-  ".fa-instagram": $instagram-color,
-  ".fa-linkedin": $linkedin-color,
-);
-
-.footer{
-    background-color: $primary-color;
-    color: $white;
-    
+.footer{   
     font-size: .8125rem;
     line-height: 1.375rem;
+    text-align: center;
 
-    & a{
-        color: $white;
-        &:hover{
-            text-decoration:underline;
-        }
+    & a:hover{
+        text-decoration:underline;        
     }
-}
-
-.footer-menus{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 47px 0 0 0;
-}
-
-.menu{
-    width:225px;
-    padding-bottom:35px;
-    & h4{
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 1rem;
-        margin-bottom: 26px;
-    }
-}
-
-.menu ul{
-    padding-left:0;
-    margin-bottom:0;
-    & li{
-        list-style: none;
-    }    
 }
