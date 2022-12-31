@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-12">
                     <h1>JS Image Picker</h1>
-                    <p>This is a simple demo of Javascript Arrays in conjuction with input validation and third party API integration.</p>
+                    <p>A simple demo of javascript arrays in conjuction with input validation and third party API integration.</p>
                 </div>
             </div>
         </header>
@@ -24,77 +24,54 @@
 
                 <div class="col-12 col-md-8">
                     <div class="card about">
-                        <table class="table table-striped">
+                        <div id="saved-none" class="alert alert-warning ">
+                            <h4>No Images Saved</h4>  
+                        </div>
+                        <table id="saved-list" class="table table-striped">
                             <thead class="table-dark">
                                 <tr>
-                                    <th colspan="50">Email</th>
-                                    <th colspan="50">Saved</th>
+                                    <th>Email</th>
+                                    <th>Saved</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td colspan="50">name1@email.com</td>
-                                    <td colspan="50">
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="50">name1@email.com</td>
-                                    <td colspan="50">
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="50">name1@email.com</td>
-                                    <td colspan="50">
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                        <img src="https://picsum.photos/60/60" class="picture" alt="alt text" />
-                                    </td>
-                                </tr>
+                            <tbody class="image-list">                               
                             </tbody>
                         </table>
-
-                        <div class="alert alert-warning">
-                            <h4>No Images Saved</h4>
+                        <div class="alert alert-dark">
                             <h6>Instructions:</h6>
                             <ol>
-                                <li>Enter an email address</li>
-                                <li>Click refresh to load a new image</li>
+                                <li>Enter a valid email address</li>
                                 <li>Hit save to store the image</li>
-                                <li>The image list will update automatically</li>             
+                                <li>The list will update automatically</li>             
+                                <li>Previously used emails will be added to the email dropdown</li>             
+                                <li>You can click refresh to load a new image</li>
+                                <li>You can save as many images as you want</li>             
+                                <li>You can use as many emails as you want</li>             
                             </ol>     
                         </div>
                     </div>                    
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="card">                          
-                        <label for="email" class="required">Email:</label>
-                        <input type="email" id="email" name="email" class="input-field" list="prevEmails" autocomplete="off"  size="50">
+                    <div class="card">          
+                        <p class="form-message alert d-none"></p>
+                        
+                        <div class="form-group">
+                            <label for="email" class="required">Email:</label>
+                            <input type="text" id="email" name="email" class="input-field" placeholder="Email *  (ex. name@email.com)" autocomplete="off" list="prevEmails">
                             <datalist id="prevEmails">
-                                <option value="email1@test.com">
-                                <option value="email2@test.com">
                             </datalist>
-
-                        <label for="email" class="required mt-3">Picture: </label>
-                        <img src="https://picsum.photos/600/350" class="picture primary" alt="alt text" />
-                        <a href="#" class="btn btn-sm btn-refresh btn-prim">Refresh <i class="fa fa-refresh"></i></a>
+                            <span class="input-error"></span>
+                        </div>
+                            
+                        <div class="form-group">
+                            <label for="email" class="required">Picture: </label>
+                            <img src="" id="picture" class="picture primary" alt="alt text" />
+                            <a href="#" class="btn btn-sm btn-refresh btn-prim">Refresh <i class="fa fa-refresh"></i></a>
+                            <span class="input-error"></span>
+                        </div>
 
                         <hr>                        
-                        <a href="#" class="btn btn-sec">
+                        <a href="#" class="btn btn-sec btn-save">
                             Save
                         </a>                        
                     </div>                    
@@ -106,7 +83,7 @@
             <div class="row">
                 <div class="col-12">
                     <hr>
-                    <p>More of my recent works can be found in <a href="https://mark-acab.netmatters-scs.co.uk/" target="_blank">my portfolio</a> 
+                    <p>My recent works can be found in <a href="https://mark-acab.netmatters-scs.co.uk/" target="_blank">my portfolio</a> 
                     and please checkout <a href="https://chiefofstack.com">my blog</a> for more previous projects that I worked on. </p>
                 </div>
             </div>
