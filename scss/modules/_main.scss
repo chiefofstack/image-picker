@@ -1,3 +1,5 @@
+@use "sass:map";
+
 .card{
     padding: 30px;
     margin-bottom:20px;
@@ -91,4 +93,38 @@
 
 #saved-none h4{
     margin-bottom:0;
+}
+
+
+@media( max-width:map.get($breakpoints,"lg")){
+
+	/* Force table to not behave like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+    .table > thead > tr  {
+        & > th{
+            display:none;
+            border:none;
+            & + th{
+                width: 100% !important;
+                display:block;
+            }
+        }        
+    }
+	
+	tr { 
+        border-bottom-width:1px; 
+    }
+	
+	td { 
+		position: relative;
+        border: none;
+	}
+    
+    .email-col{
+        padding-bottom:0 !important;
+    }
+	
 }
