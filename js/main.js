@@ -17,17 +17,6 @@ function addNewRow(index){
     imageList.append(newRow);
 }
 
-// add placeholder rows
-function addPlaceholderRows(count){
-    const newRow = `<tr class="placeholder">
-                        <th></th>
-                        <th></th>
-                    </tr>`;
-    for(let i = 1; i <= count; i++){
-        imageList.append(newRow);
-    }
-}
-
 // add image to a specific row
 function addImage(index,imageId){
      const imageCol = $(`#row-${index} > .images-col`);     
@@ -119,7 +108,6 @@ function refreshImage(){
 }
 
 $(document).ready( () => {
-    addPlaceholderRows(6 - savedImages.length);
     refreshImage()
 });
 
@@ -165,9 +153,9 @@ btnSave.on('click', () =>{
 
         // reset list        
         $('#saved-none').addClass('d-none');
+        $('#saved-list').removeClass('d-none');
         $('.placeholder').remove();
         addImage(objectIndex, generatedPicId);        
-        addPlaceholderRows(6 - savedImages.length);
 
         // reset form        
         emailField.val('');
