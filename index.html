@@ -30,39 +30,9 @@
         </header>
         <main class="container">
             <div class="row">
-
-                <div class="col-12 col-md-8">
-                    <div class="card about">
-                        <div id="saved-none" class="alert alert-warning ">
-                            <h4>No Images Saved</h4>  
-                        </div>
-                        <table id="saved-list" class="table table-striped">
-                            <thead class="table-dark">
-                                <tr>
-                                    <th>Email</th>
-                                    <th>Saved</th>
-                                </tr>
-                            </thead>
-                            <tbody class="image-list">                               
-                            </tbody>
-                        </table>
-                        <div class="alert alert-dark">
-                            <h6>Instructions:</h6>
-                            <ol>
-                                <li>Enter a valid email address</li>
-                                <li>Hit save to store the image</li>
-                                <li>The list will update automatically</li>             
-                                <li>Previously used emails will be added to the email dropdown</li>             
-                                <li>You can click refresh to load a new image</li>
-                                <li>You can save as many images as you want</li>             
-                                <li>You can use as many emails as you want</li>             
-                            </ol>     
-                        </div>
-                    </div>                    
-                </div>
                 <div class="col-12 col-md-4">
                     <div class="card">          
-                        <p class="form-message alert d-none"></p>
+                        <small class="form-message alert d-none"></small>
                         
                         <div class="form-group">
                             <label for="email" class="required">Email:</label>
@@ -85,6 +55,36 @@
                         </a>                        
                     </div>                    
                 </div>
+                <div class="col-12 col-md-8">
+                    <div class="card about">
+                        <div id="saved-none" class="alert alert-warning ">
+                            <h4>No Images Saved</h4>  
+                        </div>
+                        <table id="saved-list" class="table table-striped d-none">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Email</th>
+                                    <th>Saved Images</th>
+                                </tr>
+                            </thead>
+                            <tbody class="image-list">                               
+                            </tbody>
+                        </table>
+                        <div class="alert alert-dark">
+                            <h6>Instructions:</h6>
+                            <ol>
+                                <li>Enter a valid email address</li>
+                                <li>Hit save to store the image</li>
+                                <li>The list will update automatically</li>             
+                                <li>Previously used emails will be added to the email dropdown</li>             
+                                <li>You can click refresh to load a new image</li>
+                                <li>You can save as many images as you want</li>             
+                                <li>You can use as many emails as you want</li>             
+                            </ol>     
+                        </div>
+                    </div>                    
+                </div>
+
             </div>            
         </main>
 
